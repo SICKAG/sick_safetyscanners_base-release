@@ -35,6 +35,7 @@
 #ifndef SICK_SAFETYSCANNERS_BASE_DATA_PROCESSING_PARSEDATAGRAMHEADER_H
 #define SICK_SAFETYSCANNERS_BASE_DATA_PROCESSING_PARSEDATAGRAMHEADER_H
 
+#include <cstdint>
 #include "sick_safetyscanners_base/datastructure/Data.h"
 #include "sick_safetyscanners_base/datastructure/DatagramHeader.h"
 #include "sick_safetyscanners_base/datastructure/PacketBuffer.h"
