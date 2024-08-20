@@ -35,6 +35,7 @@
 #ifndef SICK_SAFETYSCANNERS_BASE_DATASTRUCTURE_PACKETBUFFER_H
 #define SICK_SAFETYSCANNERS_BASE_DATASTRUCTURE_PACKETBUFFER_H
 
+#include <cstdint>
 #include <iostream>
 #include <stdint.h>
 #include <string>

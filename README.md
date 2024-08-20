@@ -77,18 +77,18 @@ In cases where you do not want the driver to spawn internal child threads to asy
 Example
 ```
 // Sensor IP and Port
-std::string sensor_ip_str = 192.168.1.11
+std::string sensor_ip_str = "192.168.1.11";
 sick::types::ip_address_t sensor_ip = boost::asio::ip::address_v4::from_string(sensor_ip_str);
 sick::types::port_t tcp_port {2122};
 
 // Prepare the CommSettings for Sensor streaming data
 sick::datastructure::CommSettings comm_settings;
-std::string host_ip_str = "192.168.1.9"
+std::string host_ip_str = "192.168.1.9";
 comm_settings.host_ip = boost::asio::ip::address_v4::from_string(host_ip_str);
 comm_settings.host_udp_port = 0;
 
 // Create a sensor instance
-auto safety_scanner = std::make_uniqe<sick::SyncSickSafetyScanner>(sensor_ip, tcp_port, comm_settings);
+auto safety_scanner = std::make_unique<sick::SyncSickSafetyScanner>(sensor_ip, tcp_port, comm_settings);
 
 // Receive one sensor data packet
 auto timeout = boost::posix_time::seconds(5);

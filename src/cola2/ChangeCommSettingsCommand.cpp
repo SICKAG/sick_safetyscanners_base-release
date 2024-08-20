@@ -32,7 +32,7 @@
  */
 //----------------------------------------------------------------------
 
-
+#include <cstdint>
 #include "sick_safetyscanners_base/cola2/ChangeCommSettingsCommand.h"
 
 #include "sick_safetyscanners_base/cola2/Cola2Session.h"
