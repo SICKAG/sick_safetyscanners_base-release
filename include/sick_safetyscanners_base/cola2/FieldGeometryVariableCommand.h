@@ -35,7 +35,7 @@
 #ifndef SICK_SAFETYSCANNERS_BASE_COLA2_FIELDGEOMETRYVARIABLECOMMAND_H
 #define SICK_SAFETYSCANNERS_BASE_COLA2_FIELDGEOMETRYVARIABLECOMMAND_H
 
-
+#include <cstdint>
 #include "sick_safetyscanners_base/cola2/VariableCommand.h"
 #include "sick_safetyscanners_base/data_processing/ParseFieldGeometryData.h"
 #include "sick_safetyscanners_base/datastructure/CommSettings.h"

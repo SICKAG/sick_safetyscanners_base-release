@@ -42,6 +42,7 @@
 #include "sick_safetyscanners_base/Logging.h"
 #include "sick_safetyscanners_base/data_processing/ReadWriteHelper.hpp"
 
+#include <cstdint>
 #include <string>
 #include <vector>
 

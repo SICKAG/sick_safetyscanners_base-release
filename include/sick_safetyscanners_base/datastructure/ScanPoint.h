@@ -35,6 +35,7 @@
 #ifndef SICK_SAFETYSCANNERS_BASE_DATASTRUCTURE_SCANPOINT_H
 #define SICK_SAFETYSCANNERS_BASE_DATASTRUCTURE_SCANPOINT_H
 
+#include <cstdint>
 #include <stdint.h>
 
 namespace sick {
