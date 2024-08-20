@@ -37,6 +37,7 @@
 
 #include <boost/asio.hpp>
 #include <boost/date_time/posix_time/posix_time_types.hpp>
+#include <cstdint>
 #include <vector>
 
 #include "sick_safetyscanners_base/Types.h"
