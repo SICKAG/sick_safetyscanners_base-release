@@ -35,6 +35,7 @@
 #ifndef SICK_SAFETYSCANNERS_BASE_TYPES_H
 #define SICK_SAFETYSCANNERS_BASE_TYPES_H
 
+#include <cstdint>
 #include <functional>
 #include <memory>
 

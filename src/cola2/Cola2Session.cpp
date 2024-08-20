@@ -35,6 +35,7 @@
 #include "sick_safetyscanners_base/cola2/Cola2Session.h"
 #include "sick_safetyscanners_base/Types.h"
 #include <boost/asio.hpp>
+#include <cstdint>
 
 namespace sick {
 namespace cola2 {

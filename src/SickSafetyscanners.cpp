@@ -45,13 +45,11 @@ SickSafetyscannersBase::SickSafetyscannersBase(sick::types::ip_address_t sensor_
                                                sick::types::port_t sensor_tcp_port,
                                                CommSettings comm_settings)
   : m_sensor_ip(sensor_ip)
-  , m_sensor_tcp_port(sensor_tcp_port)
   , m_comm_settings(comm_settings)
   , m_io_service_ptr(sick::make_unique<boost::asio::io_service>())
   , m_io_service(*m_io_service_ptr)
   , m_udp_client(m_io_service, comm_settings.host_udp_port)
-  , m_session(
-      std::move(sick::make_unique<sick::communication::TCPClient>(m_sensor_ip, sensor_tcp_port)))
+  , m_session(sick::make_unique<sick::communication::TCPClient>(m_sensor_ip, sensor_tcp_port))
   , m_packet_merger()
 {
   changeSensorSettings(comm_settings);
@@ -62,13 +60,11 @@ SickSafetyscannersBase::SickSafetyscannersBase(sick::types::ip_address_t sensor_
                                                CommSettings comm_settings,
                                                boost::asio::ip::address_v4 interface_ip)
   : m_sensor_ip(sensor_ip)
-  , m_sensor_tcp_port(sensor_tcp_port)
   , m_comm_settings(comm_settings)
   , m_io_service_ptr(sick::make_unique<boost::asio::io_service>())
   , m_io_service(*m_io_service_ptr)
   , m_udp_client(m_io_service, comm_settings.host_udp_port, comm_settings.host_ip, interface_ip)
-  , m_session(
-      std::move(sick::make_unique<sick::communication::TCPClient>(m_sensor_ip, sensor_tcp_port)))
+  , m_session(sick::make_unique<sick::communication::TCPClient>(m_sensor_ip, sensor_tcp_port))
   , m_packet_merger()
 {
   changeSensorSettings(comm_settings);
@@ -79,13 +75,11 @@ SickSafetyscannersBase::SickSafetyscannersBase(sick::types::ip_address_t sensor_
                                                CommSettings comm_settings,
                                                boost::asio::io_service& io_service)
   : m_sensor_ip(sensor_ip)
-  , m_sensor_tcp_port(sensor_tcp_port)
   , m_comm_settings(comm_settings)
   , m_io_service_ptr(nullptr)
   , m_io_service(io_service)
   , m_udp_client(m_io_service, comm_settings.host_udp_port)
-  , m_session(
-      std::move(sick::make_unique<sick::communication::TCPClient>(m_sensor_ip, sensor_tcp_port)))
+  , m_session(sick::make_unique<sick::communication::TCPClient>(m_sensor_ip, sensor_tcp_port))
   , m_packet_merger()
 {
   changeSensorSettings(comm_settings);
