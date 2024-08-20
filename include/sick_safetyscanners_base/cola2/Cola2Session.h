@@ -50,6 +50,7 @@
 #include "sick_safetyscanners_base/data_processing/TCPPacketMerger.h"
 
 #include <boost/optional.hpp>
+#include <cstdint>
 
 namespace sick {
 namespace cola2 {

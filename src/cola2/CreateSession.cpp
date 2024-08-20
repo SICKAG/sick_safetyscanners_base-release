@@ -31,7 +31,7 @@
  * \date    2018-09-24
  */
 //----------------------------------------------------------------------
-
+#include <cstdint>
 #include "sick_safetyscanners_base/cola2/CreateSession.h"
 
 #include "sick_safetyscanners_base/cola2/Cola2Session.h"

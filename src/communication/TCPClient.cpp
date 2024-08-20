@@ -130,7 +130,6 @@ void TCPClient::disconnect()
 
 bool TCPClient::isConnected()
 {
-  boost::system::error_code err;
   return m_socket.is_open();
 }
 
