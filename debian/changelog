@@ -1,0 +1,35 @@
+ros-humble-sick-safetyscanners-base (1.0.3-1jammy) jammy; urgency=high
+
+  * Adding missing includes for ubuntu24 compiler
+  * Adding dependencies on specific boost libraries, exporting dep to chrono
+  * Fix Sync example
+  * Fix read checksums
+  * UDPPacketMerger: fixing missing include
+  * Contributors: Carl Morgan, Denis Taniguchi, Lennart Puck, Marco Bassa, Matthias Schoepfer, Rein Appeldoorn, Soren Holm, 张天宇
+
+ -- Lennart Puck <puck@fzi.de>  Mon, 19 Aug 2024 22:00:00 -0000
+
+ros-humble-sick-safetyscanners-base (1.0.2-1jammy) jammy; urgency=high
+
+  * Added missing 'using' statement to UDPClient.cpp
+  * Contributors: Lennart Puck, crown-bdee
+
+ -- Lennart Puck <puck@fzi.de>  Mon, 18 Jul 2022 22:00:00 -0000
+
+ros-humble-sick-safetyscanners-base (1.0.1-1jammy) jammy; urgency=high
+
+  * Merge fix for memory leak in command execution
+  * Fix memory leak in createAndExecuteCommand
+  * Adding multicast functionality
+  * Merge constant setting of field angles
+  * Contributors: Andrew Kooiman, Lennart Puck
+
+ -- Lennart Puck <puck@fzi.de>  Tue, 21 Dec 2021 23:00:00 -0000
+
+ros-humble-sick-safetyscanners-base (1.0.0-1jammy) jammy; urgency=high
+
+  * Initial Release
+
+ -- Lennart Puck <puck@fzi.de>  Sun, 10 Jan 2021 23:00:00 -0000
+
+
