@@ -35,7 +35,7 @@
 #ifndef SICK_SAFETYSCANNERS_BASE_COLA2_CREATESESSION_H
 #define SICK_SAFETYSCANNERS_BASE_COLA2_CREATESESSION_H
 
-
+#include <cstdint>
 #include "sick_safetyscanners_base/cola2/Command.h"
 
 namespace sick {

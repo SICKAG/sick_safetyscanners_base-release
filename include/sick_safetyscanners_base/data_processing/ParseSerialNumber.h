@@ -41,6 +41,7 @@
 
 #include "sick_safetyscanners_base/data_processing/ReadWriteHelper.hpp"
 
+#include <cstdint>
 #include <string>
 
 namespace sick {
