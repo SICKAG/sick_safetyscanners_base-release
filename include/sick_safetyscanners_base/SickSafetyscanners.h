@@ -39,6 +39,7 @@
 #define SICK_SAFETYSCANNERS_BASE_SICKSAFETYSCANNERS_H
 
 #include <chrono>
+#include <cstdint>
 #include <functional>
 #include <iostream>
 #include <memory>
@@ -61,7 +62,6 @@
 #include "sick_safetyscanners_base/cola2/Cola2Session.h"
 #include "sick_safetyscanners_base/cola2/Command.h"
 #include "sick_safetyscanners_base/datastructure/Datastructure.h"
-
 
 namespace sick {
 
@@ -262,9 +262,7 @@ public:
 
 private:
   sick::types::ip_address_t m_sensor_ip;
-  sick::types::port_t m_sensor_tcp_port;
   CommSettings m_comm_settings;
-  bool m_is_initialized;
   std::unique_ptr<boost::asio::io_service> m_io_service_ptr;
 
   /*!

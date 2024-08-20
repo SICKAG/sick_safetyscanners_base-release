@@ -36,7 +36,7 @@
 #ifndef SICK_SAFETYSCANNERS_BASE_COLA2_CHANGECOMMSETTINGSCOMMAND_H
 #define SICK_SAFETYSCANNERS_BASE_COLA2_CHANGECOMMSETTINGSCOMMAND_H
 
-
+#include <cstdint>
 #include "sick_safetyscanners_base/cola2/MethodCommand.h"
 #include "sick_safetyscanners_base/datastructure/CommSettings.h"
 
