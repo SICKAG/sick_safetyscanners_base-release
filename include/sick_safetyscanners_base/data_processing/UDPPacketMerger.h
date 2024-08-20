@@ -41,6 +41,8 @@
 #include "sick_safetyscanners_base/data_processing/ParseDatagramHeader.h"
 
 #include <algorithm>
+#include <cstdint>
+#include <map>
 #include <mutex>
 
 namespace sick {

@@ -35,6 +35,7 @@
 #ifndef SICK_SAFETYSCANNERS_BASE_DATASTRUCTURE_DERIVEDVALUES_H
 #define SICK_SAFETYSCANNERS_BASE_DATASTRUCTURE_DERIVEDVALUES_H
 
+#include <cstdint>
 #include <stdint.h>
 
 namespace sick {

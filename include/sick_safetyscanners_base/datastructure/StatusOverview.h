@@ -35,7 +35,9 @@
 #ifndef SICK_SAFETYSCANNERS_BASE_DATASTRUCTURE_STATUSOVERVIEW_H
 #define SICK_SAFETYSCANNERS_BASE_DATASTRUCTURE_STATUSOVERVIEW_H
 
+#include <cstdint>
 #include <iostream>
+#include <string>
 
 
 namespace sick {

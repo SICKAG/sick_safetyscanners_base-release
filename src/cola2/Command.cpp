@@ -34,6 +34,7 @@
 
 #include "sick_safetyscanners_base/cola2/Command.h"
 #include "sick_safetyscanners_base/cola2/Cola2Session.h"
+#include <cstdint>
 
 namespace sick {
 namespace cola2 {
